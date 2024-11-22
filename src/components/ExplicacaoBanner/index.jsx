@@ -21,7 +21,7 @@ const TextosContainer = styled.div`
 const ExplicacaoBanner = () => {
     return (
         <SobreContainer>
-            <SobreImg src="../public/images/sobreImg.png"/>
+            <SobreImg src="/images/sobreImg.png"/>
             <TextosContainer>
                 <Textos
                     tag='h2'
