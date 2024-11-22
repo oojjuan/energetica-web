@@ -18,7 +18,7 @@ const BotaoEstilizado = styled.button`
     }
 `
 
-const Botao = ({ size, children, active, onClick, id }) => {
+const Botao = ({ size = 'sm', children, active, onClick, id }) => {
     return (
         <BotaoEstilizado
             $size = {size}

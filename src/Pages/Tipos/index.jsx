@@ -1,7 +1,11 @@
 import styled from "styled-components"
-import Botao from "../../components/Botao"
 import { useState } from "react"
+import Botao from "../../components/Botao"
 import Textos from "../../components/Textos"
+
+import cards from "../../json/cards.json"
+import Card from "../../components/Cards"
+
 
 
 const TipoContainer = styled.div`
@@ -12,15 +16,31 @@ const TipoContainer = styled.div`
     margin-top: 50px;
 `
 
+const CardContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 50px; 
+    justify-content: center; 
+    width: 100%; 
+    margin-bottom: 25px;
+`;
+
+
+
 const Tipos = () => {
     
     const [tipo, setTipo] = useState('ENERGIA LIMPA')
+    const [tipoTexto, setTipoTexto] = useState('limpa')
  
     const alternarCard = () => {
         setTipo((energia) => {
             const novoTipo = energia === 'ENERGIA LIMPA' ? 'ENERGIA POLUENTE' : 'ENERGIA LIMPA';
             return novoTipo;
         });
+        setTipoTexto((texto) => {
+            const novoTexto = texto === 'limpa' ? 'poluente' : 'limpa' ;
+            return novoTexto
+        })
     }
 
     return (
@@ -40,6 +60,20 @@ const Tipos = () => {
                 spacing="20px"
                 texto={tipo}
             />
+            <CardContainer>
+                {cards.map((card) => {
+                    return (
+                        card.tipo == tipoTexto ?
+                        <Card
+                            tipo={card.tipo}
+                            imgSrc={card.path}
+                            titulo={card.titulo}
+                            key={card.id}
+                            id={card.id}
+                        >Ver</Card>
+                        : ''
+                )} )}
+            </CardContainer>
         </TipoContainer>
     )
 }

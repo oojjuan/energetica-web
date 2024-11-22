@@ -62,8 +62,7 @@ const Diferencas = () => {
 
             <BotoesContainer>
                 <Botao 
-                    id='botao1'
-                    size='sm' 
+                    id='botao1' 
                     active={botao1}
                     onClick={alternarCard}
                 >
@@ -71,7 +70,6 @@ const Diferencas = () => {
                 </Botao>
                 <Botao 
                     id='botao2'
-                    size='sm'
                     active={botao2}
                     onClick={alternarCard}
                 >
