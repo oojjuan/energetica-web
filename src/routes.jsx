@@ -5,6 +5,8 @@ import PaginaPadrao from "./components/PaginaPadrao"
 import Sobre from "./Pages/Sobre"
 import Tipos from "./Pages/Tipos"
 import CardSelecionado from "./Pages/Card"
+import NaoEncontrada from "./Pages/NaoEncontrada"
+import ScrollToTop from "./components/ScrollToTop"
 
 const FundoEstilizado = styled.div`
   background: linear-gradient(to bottom, #457337 0%, #36556D 100%);
@@ -20,6 +22,7 @@ function AppRoutes() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <FundoEstilizado>
         <EstilosGlobais />
       
@@ -29,8 +32,8 @@ function AppRoutes() {
             <Route path="/sobre" element={ <Sobre/> } />
             <Route path='/tipos' element={ <Tipos/> } />
             <Route path="/tipos/:id/*" element={ <CardSelecionado /> }/>
+            <Route path="*" element={ <NaoEncontrada /> } />
           </Route>
-          <Route path="*" element={<h1>Pagina não encontrada</h1>} />
         </Routes>
 
       </FundoEstilizado>
