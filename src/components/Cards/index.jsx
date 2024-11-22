@@ -26,13 +26,6 @@ const CardImg = styled.img`
 const Card = ({ tipo, imgSrc, titulo, id, size, children, text = undefined }) => {
 
     const localizacao = useLocation()
-    
-
-//            
-//            
-//            
-//            
-//            
 
     return (
         <>
@@ -58,7 +51,7 @@ const Card = ({ tipo, imgSrc, titulo, id, size, children, text = undefined }) =>
                 />
                 {localizacao.pathname === `/tipos` ? (
                     <BotaoLink
-                        local={`/tipos/${id}`}
+                        local={`/card/${id}`}
                         active='#FFFFFF'
                     >
                         {children}

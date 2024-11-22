@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import EstilosGlobais from './components/Global'
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import PaginaPadrao from "./components/PaginaPadrao"
 import Sobre from "./Pages/Sobre"
 import Tipos from "./Pages/Tipos"
@@ -27,13 +27,14 @@ function AppRoutes() {
         <EstilosGlobais />
       
         <Routes>
-          <Route path="/" element={<Navigate to="/sobre" replace />}  />
           <Route path="/" element={ <PaginaPadrao /> }>
-            <Route path="/sobre" element={ <Sobre/> } />
+            <Route index element={ <Sobre/> } />
             <Route path='/tipos' element={ <Tipos/> } />
-            <Route path="/tipos/:id/*" element={ <CardSelecionado /> }/>
-            <Route path="*" element={ <NaoEncontrada /> } />
           </Route>
+          
+          <Route path="/card/:id" element={ <CardSelecionado /> }/>
+          
+          <Route path="*" element={ <NaoEncontrada /> } />
         </Routes>
 
       </FundoEstilizado>

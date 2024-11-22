@@ -1,7 +1,8 @@
-import { useNavigate, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import styled from "styled-components"
 import cards from "../../json/cards.json"
 import Card from "../../components/Cards"
+import PaginaPadrao from "../../components/PaginaPadrao"
 
 const CardContainer = styled.section`
     margin: 25px 0;
@@ -16,8 +17,6 @@ const CardContainer = styled.section`
 `
 
 const CardSelecionado = () => {
-    const navegador = useNavigate()
-
     const parametros = useParams();
 
     const cardClicado = cards.find((selecionado) => {
@@ -29,18 +28,20 @@ const CardSelecionado = () => {
     }
     
     return (
-        <CardContainer>
-            <Card
-                size={'80%'}
-                tipo={cardClicado.tipo}
-                imgSrc={cardClicado.path}
-                titulo={cardClicado.titulo}
-                text={cardClicado.texto}
-                
-            >
-                Voltar
-            </Card>
-        </CardContainer>
+        <PaginaPadrao>
+            <CardContainer>
+                <Card
+                    size={'80%'}
+                    tipo={cardClicado.tipo}
+                    imgSrc={cardClicado.path}
+                    titulo={cardClicado.titulo}
+                    text={cardClicado.texto}
+                    
+                >
+                    Voltar
+                </Card>
+            </CardContainer>
+        </PaginaPadrao>
     )
 }
 

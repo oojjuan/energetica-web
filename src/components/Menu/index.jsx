@@ -17,9 +17,9 @@ const Menu = () => {
     return (
             <Navegacao>
                 <BotaoLink 
-                    local='/sobre'
+                    local='/'
                     active={
-                        localizacao.pathname === '/sobre' 
+                        localizacao.pathname === '/' 
                         ? '#FFFFFF' 
                         : '#36556D'
                 }>

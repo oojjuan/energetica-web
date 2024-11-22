@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components"
 
 
@@ -20,9 +20,6 @@ const LinkEstilizado = styled(Link)`
 `
 
 const BotaoLink = ({ active, children, local }) => {
-
-    const navegar = useNavigate()
-
     return (
         <LinkEstilizado to={local} $active={active}>
             {children}
