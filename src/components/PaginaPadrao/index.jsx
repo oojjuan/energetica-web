@@ -23,14 +23,14 @@ const LogoContainer = styled.figure`
 const PaginaPadrao = ({ children }) => {
     return (
         <>
-            <LogoContainer $imagem='../public/images/logoEscrito.png' />
-            <MainContainer>
-              <Menu />
-              <Outlet />
-              {children}
+          <LogoContainer $imagem='../public/images/logoEscrito.png' />
+          <MainContainer>
+            <Menu />
+            <Outlet />
+            {children}
               
-            </MainContainer>
-            <Footer />
+          </MainContainer>
+          <Footer />
         </>
     )
 }

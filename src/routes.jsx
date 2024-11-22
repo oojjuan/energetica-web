@@ -1,8 +1,9 @@
 import styled from "styled-components"
 import EstilosGlobais from './components/Global'
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import PaginaPadrao from "./components/PaginaPadrao"
 import Sobre from "./Pages/Sobre"
+import Tipos from "./Pages/Tipos"
 
 const FundoEstilizado = styled.div`
   background: linear-gradient(to bottom, #457337 0%, #36556D 100%);
@@ -22,9 +23,10 @@ function AppRoutes() {
         <EstilosGlobais />
       
         <Routes>
-          <Route path="/" element={<PaginaPadrao />}>
-            <Route index element={ <Sobre/> } />
-            <Route path='/tipos' element={''} />
+          <Route path="/" element={<Navigate to="/sobre" replace />}  />
+          <Route path="/" element={ <PaginaPadrao /> }>
+            <Route path="/sobre" element={ <Sobre/> } />
+            <Route path='/tipos' element={ <Tipos/> } />
           </Route>
           <Route path="*" element={<h1>Pagina não encontrada</h1>} />
         </Routes>

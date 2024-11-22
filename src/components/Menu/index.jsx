@@ -32,7 +32,7 @@ const Menu = () => {
     return (
             <Navegacao>
                 <LinkEstilizado to='/' $active={
-                    local.pathname === '/' 
+                    local.pathname === '/sobre' 
                     ? '#FFFFFF' 
                     : '#36556D'
                 }>
