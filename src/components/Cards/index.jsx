@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import Textos from "../Textos"
 import BotaoLink from "../Link"
+import { useLocation } from "react-router-dom"
+import LinkVoltar from "../Link/LinkVoltar"
 
 const Cards = styled.div`
     display: flex;
@@ -22,7 +24,16 @@ const CardImg = styled.img`
 
 
 const Card = ({ tipo, imgSrc, titulo, id, size, children, text = undefined }) => {
+
+    const localizacao = useLocation()
     
+
+//            
+//            
+//            
+//            
+//            
+
     return (
         <>
             <Cards
@@ -45,12 +56,22 @@ const Card = ({ tipo, imgSrc, titulo, id, size, children, text = undefined }) =>
                     width='90%'
 
                 />
-                <BotaoLink
-                    local={`/tipos/${id}`}
-                    active='#FFFFFF'
-                >
-                    {children}
-                </BotaoLink>
+                {localizacao.pathname === `/tipos` ? (
+                    <BotaoLink
+                        local={`/tipos/${id}`}
+                        active='#FFFFFF'
+                    >
+                        {children}
+                    </BotaoLink>
+            
+                ) : (
+                    <LinkVoltar
+                        active='#FFFFFF'
+                    >
+                        {children}
+                    </LinkVoltar>
+                )}
+                    
             </Cards>
         </>
     )

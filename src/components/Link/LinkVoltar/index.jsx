@@ -1,16 +1,17 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 
-
-const LinkEstilizado = styled(Link)`
+const LinkEstilizado = styled.button`
     background-color: ${props => props.$active};
     padding: 40px 50px;
     border-radius: 25px;
+    border: none;
     color: ${props => props.$active === '#FFFFFF' ? '#36556D' : '#FFFFFF'};
     font-size: 32px;
     text-decoration: none;
     font-family: 'AnonymousProRegular';
     transition: 0.25s ease;
+    
 
     &:hover {
         box-shadow: 10px 10px 5px #00000025;
@@ -19,15 +20,15 @@ const LinkEstilizado = styled(Link)`
     }
 `
 
-const BotaoLink = ({ active, children, local }) => {
-
+const LinkVoltar = ({ active, children }) => {
+    
     const navegar = useNavigate()
-
+    
     return (
-        <LinkEstilizado to={local} $active={active}>
+        <LinkEstilizado onClick={() => navegar(-1)} $active={active}>
             {children}
         </LinkEstilizado>
     )
 }
 
-export default BotaoLink
+export default LinkVoltar
