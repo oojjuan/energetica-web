@@ -7,6 +7,7 @@ const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 60px 0;
 `
 
@@ -15,7 +16,7 @@ const InfoImagem = styled.figure`
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 40%
+    min-height: 220px;
     ;
 `
 

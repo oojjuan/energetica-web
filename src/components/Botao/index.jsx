@@ -4,7 +4,7 @@ const BotaoEstilizado = styled.button`
     text-decoration: none;
     background-color: ${props => props.$active ? '#FFFFFF' : '#36556D'};
     color: ${props => props.$active ? '#36556D' : '#FFFFFF'};
-    padding: ${props => props.$size === 'sm' ? '24px 40px' : ''};
+    padding: ${props => props.$size === 'sm' ? '24px 40px' : '27px 70px'};
     font-family: 'AnonymousProRegular';
     font-size: ${props => props.$size === 'sm' ? '32px' : '36px'};
     border: none;

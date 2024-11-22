@@ -30,12 +30,11 @@ const ExplicacaoBanner = () => {
                     fontSize='32px'
                     texto='Como os diferentes tipos de energia impactam na sua vida?'
                 />
-
                 <Textos 
                     tag='p'
                     width='450px'
                     fontFamily='InterSemiBold'
-                    fontSize = '24px'
+                    fontSize='24px'
                     texto='Existem diversos tipos de energia que são utilizadas ao redor do mundo e cada uma delas possui seus altos e baixos. Entretanto, atualmente sofremos com as consequências de utilizar, na maioria das vezes, tipos que poluem nosso planeta.' 
                 />
             </TextosContainer>

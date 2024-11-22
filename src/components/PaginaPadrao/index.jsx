@@ -8,6 +8,7 @@ const MainContainer = styled.main`
   max-width: 80%;
   min-height: 90vh;
   background-color: #0c270878;
+  border-radius: 25px;
 `
 
 const LogoContainer = styled.figure`

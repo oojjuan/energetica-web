@@ -11,7 +11,7 @@ const TituloContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 90px 0;
+    margin-top: 90px;
 `
 
 const BotoesContainer = styled.div`
@@ -25,7 +25,6 @@ const BotoesContainer = styled.div`
 const ExplicacaoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 `
 

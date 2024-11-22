@@ -1,56 +1,56 @@
 [
 	{
 		"titulo" : "Energia Solar",
-		"path": "../../public/images/solar.png",
+		"path": "/images/solar.png",
 		"tipo" : "limpa",
 		"id" : "1",
 		"texto" : "A energia solar é gerada a partir da luz e do calor do sol, utilizando painéis fotovoltaicos que convertem a radiação solar em eletricidade. Seu funcionamento depende diretamente da incidência solar, sendo mais eficiente em regiões com alta disponibilidade de luz solar."
 	},
 	{		
 		"titulo" : "Energia Eólica",
-		"path": "../../public/images/eolica.png",
+		"path": "/images/eolica.png",
 		"tipo" : "limpa",
 		"id" : "2",
 		"texto" : "É gerada a partir do vento, utilizando turbinas que transformam a energia cinética do ar em eletricidade. Depende de locais com ventos constantes e intensos para ser eficiente."
 	},
 	{
 		"titulo" : "Energia Hidrelétrica",
-		"path": "../../public/images/hidreletrica.png",
+		"path": "/images/hidreletrica.png",
 		"tipo" : "limpa",
 		"id" : "3",
 		"texto" : "É produzida pelo movimento da água em barragens, onde a força da correnteza movimenta turbinas que geram eletricidade. Depende de rios com grande volume de água e quedas naturais ou artificiais."
 	},
 	{
 		"titulo" : "Energia Oceânica",
-		"path": "../../public/images/oceanica.png",
+		"path": "/images/oceanica.png",
 		"tipo" : "limpa",
 		"id" : "4",
 		"texto" : "Aproveita o movimento das ondas, marés ou diferenças de temperatura nos oceanos para gerar eletricidade. Depende das condições marítimas e da proximidade de zonas costeiras."
 	},
 	{
 		"titulo" : "Petróleo",
-		"path": "../../public/images/petroleo.png",
+		"path": "/images/petroleo.png",
 		"tipo" : "poluente",
 		"id" : "5",
 		"texto" : "É gerada pela queima de derivados do petróleo, como gasolina e diesel, liberando energia térmica para mover turbinas ou motores. Seu uso emite grandes quantidades de gases de efeito estufa e poluentes, contribuindo para o aquecimento global e a degradação ambiental."
 	},
 	{
 		"titulo" : "Carvão Mineral",
-		"path": "../../public/images/carvao_mineral.png",
+		"path": "/images/carvao_mineral.png",
 		"tipo" : "poluente",
 		"id" : "6",
 		"texto" : "É gerada pela queima do carvão, liberando calor para produzir eletricidade. Sua queima emite grandes quantidades de dióxido de carbono (CO₂) e poluentes, prejudicando o meio ambiente e acelerando o aquecimento global."
 	},
 	{
 		"titulo" : "Gás Natural",
-		"path": "../../public/images/gas_natural.png",
+		"path": "/images/gas_natural.png",
 		"tipo" : "poluente",
 		"id" : "7",
 		"texto" : "É gerada pela queima do gás natural, que emite menos CO₂ do que o carvão e o petróleo, mas ainda assim contribui para as mudanças climáticas. Seu uso também pode resultar em vazamentos de metano, um potente gás de efeito estufa."
 	},
 	{
 		"titulo" : "Energia Nuclear",
-		"path": "../../public/images/nuclear.png",
+		"path": "/images/nuclear.png",
 		"tipo" : "poluente",
 		"id" : "8",
 		"texto" : "É produzida pela fissão de átomos, geralmente de urânio, gerando calor para mover turbinas. Embora não emita CO₂, o risco está no armazenamento de resíduos radioativos e nos potenciais acidentes nucleares, que podem ter graves impactos ambientais."
